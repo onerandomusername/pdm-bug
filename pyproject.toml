@@ -1,26 +1,20 @@
-[tool.pdm]
-
-[project]
-name = "pdm-bug"
-description = "testing"
-authors = [
-    {name = "onerandomusername", email = "me@arielle.codes"},
-]
-dependencies = []
-requires-python = ">=3.11"
-readme = "README.md"
-license = {text = "MIT"}
-dynamic = ['version']
 
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
+[project]
+name = "pdm_bug"
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+dynamic = ['version']
+
+[project.optional-dependencies]
+
 [tool.pdm.build]
 includes = [
-    "pdm-bug/",
-    "README.md",
-    "pyproject.toml",
+    "pdm_bug/",
 ]
 
 [tool.pdm.version]
